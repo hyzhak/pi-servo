@@ -75,7 +75,7 @@ COPY requirements.txt .
 RUN pip install --break-system-packages --no-cache-dir -r requirements.txt
 
 # Copy the Python files
-COPY src/rpi_servo /app/rpi_servo
+COPY src /app/
 
 ENV PYTHONPATH "${PYTHONPATH}:/app/rpi_servo"
 
